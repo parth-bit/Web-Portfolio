@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-image: linear-gradient(to right bottom, #FA8BFF 22%, #2BD2FF 44%, #2BFF88 68%);
+    
+    width: 100%;
+    height: 100%;
+}
+::selection{
+    color:aliceblue;
+    background-color:black;
+}
+#main{
+    
+    width: 100%;
+    height: 100vh;
+}
+
+#nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 70px;
+}
+#nleft,#nright{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#nleft a{
+    pointer-events: all;
+    color:#fff;
+    font-family: futura;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#nleft a:hover{
+    color: lightcoral;
+}
+#nright a{
+    margin-right: 70px;
+    pointer-events: all;
+    color: #fff;
+    font-family: futura;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#nright a:hover{
+    color: lightcoral;
+}
+
+#left, #right{
+    margin-top: 3vh;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#left{
+    min-width: 50%;
+    min-height: 90%;
+}
+#left .elem{
+    position: relative;
+    overflow: hidden;
+    height: 13vw;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#left .elem h1:nth-child(1){
+    top: 0;
+}
+
+#left .elem h1{
+    margin-top: 40px;
+    margin-left: 280px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    font-family: "kajiro";
+    color: tomato;
+    font-weight: 100;
+    font-size: 10vw;
+}
+
+#right{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    color: #fff;
+}
+#right p{
+    font-family: "kajiro";
+    margin-top: 60px;
+    width: 90%;
+    color: rgb(211, 28, 28);
+    font-size: 4vw;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+#right a{
+    font-family: "kajiro";
+    text-decoration: none;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2vw;
+    width: 90%;
+    letter-spacing: 2px;
+    transition-duration: 1s;
+}
+#right a:hover{
+    letter-spacing: 5px;
+    color: palevioletred;
+}
+#ss{
+    margin-top: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 60px;
+}
+#links img{
+    width: 70px;
+    margin-left: 50px;
+    height: 60px;
+    justify-content: space-evenly;
+}

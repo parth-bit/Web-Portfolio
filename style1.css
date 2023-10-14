@@ -1,0 +1,160 @@
+body{
+    font-family: sans-serif;
+    margin: 12px;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    background-image: linear-gradient(to right bottom, #FA8BFF 12%, #2BD2FF 34%, #2BFF88 48%);
+}
+.container{
+    padding: 2rem;
+    padding-bottom: 400px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.top-section{
+    text-align: center;
+    padding: 4rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.top-section h1{
+    font-family: "kajiro";
+    font-size: 7vw;
+    letter-spacing: 3px;
+    transition-duration: 1s;
+}
+.top-section p{
+    font-family: "futura";
+}
+.top-section h1:hover{
+    color: crimson;
+    text-decoration: underline;
+}
+
+.timeline{
+    position: relative;
+    min-height: 150px;
+}
+
+.line{
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 1px);
+    width: 2px;
+    top: -50px;
+    background-color: #fff;
+    display: none;
+}
+
+.line:before,
+.line::after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line:after{
+    bottom: 0;
+}
+
+.section{
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+    padding: 1rem;
+    align-items: center;
+    min-height: 300px;
+}
+
+.section:nth-child(odd){
+    flex-direction: row-reverse;
+    transform: translateX(100%);
+}
+
+.bead{
+    position: absolute;
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.content{
+    width: calc(50% - 2rem);
+}
+.content h2{
+    font-family: "Laisha";
+    letter-spacing: 2px;
+    transition-duration: 1s;
+}
+.content h2:hover{
+    color: lightcoral;
+}
+.content p{
+    font-family: "futura";
+}
+.show-me:nth-child(n){
+    transform: none;
+    opacity: 1;
+}
+
+h1{
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#nav{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav img{
+    height: 70px;
+}
+#nleft,#nright{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#nleft a{
+    pointer-events: all;
+    color:#fff;
+    font-family: futura;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#nleft a:hover{
+    color: red;
+}
+#nright a{
+    pointer-events: all;
+    color: #fff;
+    font-family: futura;
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#nright a:hover{
+    color:red;
+}
